@@ -1,3 +1,7 @@
+# GRID LAYOUT SANDBOX
+
+## Wireframe and referenced site.
+
 <img style:"width:80%" src="./assets/img/wireframe.png" alt="Wireframe made from
 Pokémon GO online." />
 
