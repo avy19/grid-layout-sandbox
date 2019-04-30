@@ -1,0 +1,159 @@
+body {
+  background-color: lightblue;
+  font-family: sans-serif;
+}
+
+#container {
+  display: grid;
+  grid-template-areas:
+    "a a a a a a"
+    "b b b . c c"
+    "b b b . c c"
+    "d d d . c c"
+    "d d d . c c"
+    "e e e e e e";
+  width: 1200px;
+  margin:auto;
+  grid-gap: 10px;
+}
+
+header {
+  margin-top: 10px;
+  grid-area: a;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  text-align: center;
+  margin-bottom:10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+#updates {
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 5px;
+  grid-area: b;
+  display: grid;
+  grid-gap:10px;
+  padding-left:10px;
+  padding-top:10px;
+  /*grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 3fr;*/
+  width: 700px;
+  grid-template-areas:
+    "a b b b b b b"
+    ". c d d d d d"
+    ". e f f f f f"
+    ". g h h h h h"
+    ". . j j j j j";
+}
+
+#updates img {
+  grid-area: a;
+  height:100%;
+  width:100%;
+}
+
+#updats h2 {
+  grid-area: b;
+}
+
+#des1 {
+  grid-area: d;
+}
+#des2 {
+  grid-area: f;
+}
+#des3 {
+  grid-area: h;
+}
+#readmore {
+  grid-area: j;
+}
+
+#date1 {
+  grid-area: c;
+}
+#date2 {
+  grid-area: e;
+}
+#date3 {
+  grid-area:g;
+}
+
+#buttons {
+  grid-area:d;
+  display: grid;
+  /*grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);*/
+  grid-template-areas:
+    "x x x . y y y"
+    ". . z z z . .";
+  text-align: center;
+  width: 500px;
+  /*padding-left:-200px;*/
+  margin:auto;
+  margin-top:30px;
+  margin-bottom:50px;
+  margin-right:30%;
+  grid-gap:10px;
+  grid-row-gap: 30px;
+}
+
+#googleplay {
+  grid-area:x;
+  background-color: black;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  width:100%;
+}
+#applestore {
+  grid-area:y;
+  background-color: black;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  width:100%;
+}
+
+a {
+  text-decoration: none;
+  color: darkgreen;
+}
+
+#trailerbutton {
+  grid-area:z;
+  background-image: linear-gradient(to right, green, lightgreen);
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+footer {
+  grid-area:e;
+  background-image: linear-gradient(to bottom right, darkgreen, green);
+  /*width:100%;*/
+  height:50px;
+}
+
+#sideimg {
+  grid-area: c;
+  height:93%;
+  margin-top: 10%;
+  margin-left: -10%;
+  border-radius: 20px;
+}
